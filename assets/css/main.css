@@ -52,7 +52,11 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .navy-mark { color: navy; background-color: white; }
 
+.post-image { max-width: 40%; margin: 0 auto; }
+
 .news table td { font-size: 1rem; }
+.news table td .news-title { color: #B71C1C; }
+.news table td a { color: #B71C1C; }
 
 .block { padding-top: 5px; width: auto; display: inline-block; }
 
@@ -71,6 +75,8 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .header-bar { border-bottom: 1px solid #e8e8e8; text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
 .header-bar h1 { color: #424242; font-size: 5rem; }
+
+.post-content a { color: #B71C1C; }
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
 .post-list li { border-bottom: 1px solid #e8e8e8; list-style: none; padding-top: 2rem; padding-bottom: 2rem; }
@@ -102,6 +108,8 @@ ol.bibliography > li { counter-increment: bibitem -1; }
 
 .year { color: #8f8f8f; border-bottom: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 2rem; text-align: right; }
 
+.new-strong { font-weight: bold; font-size: large; background-color: #B71C1C; color: white; border-radius: 3px; padding: 2px 5px; }
+
 .publications { margin-top: 2rem; }
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 .publications ol.bibliography li { margin-bottom: 1rem; }
@@ -121,7 +129,7 @@ ol.bibliography > li { counter-increment: bibitem -1; }
 .publications ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
 .publications ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
 .publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
-.publications ol.bibliography li div.abstract.hidden { border: dashed 1px white; }
-.publications ol.bibliography li div.abstract.hidden.open { border-color: #828282; }
-.publications ol.bibliography li div.bibtex.hidden { font-family: monospace; border: dashed 1px white; font-size: 1em; }
-.publications ol.bibliography li div.bibtex.hidden.open { font-family: monospace; border-color: #828282; }
+.publications ol.bibliography li .abstract.hidden { border: dashed 1px white; }
+.publications ol.bibliography li .abstract.hidden.open { border-color: #828282; }
+.publications ol.bibliography li .bibtex.hidden { font-family: monospace; border: dashed 1px white; font-size: 1em; }
+.publications ol.bibliography li .bibtex.hidden.open { font-family: monospace; border-color: #828282; }

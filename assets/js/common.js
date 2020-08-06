@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('a.abstract').click(function () {
-        $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
+        $(this).parent().parent().parent().find(".abstract.hidden").toggleClass('open');
     });
     $('a.bibtex').click(function () {
-        $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
+        $(this).parent().parent().parent().find(".bibtex.hidden").toggleClass('open');
     });
 
     $('a.copybutton').click(function (event) {

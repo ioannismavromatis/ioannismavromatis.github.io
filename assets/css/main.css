@@ -52,8 +52,6 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .navy-mark { color: navy; background-color: white; }
 
-.post-image { max-width: 40%; margin: 0 auto; }
-
 .news table td { font-size: 1rem; }
 .news table td .news-title { color: #B71C1C; }
 .news table td a { color: #B71C1C; }
@@ -76,7 +74,8 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 .header-bar { border-bottom: 1px solid #e8e8e8; text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
 .header-bar h1 { color: #424242; font-size: 5rem; }
 
-.post-content a { color: #B71C1C; }
+.post .post-content a { color: #B71C1C; }
+.post .post-content .post-image { max-width: 40%; margin: 0 auto; }
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
 .post-list li { border-bottom: 1px solid #e8e8e8; list-style: none; padding-top: 2rem; padding-bottom: 2rem; }

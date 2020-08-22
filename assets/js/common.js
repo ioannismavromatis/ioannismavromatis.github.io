@@ -18,4 +18,8 @@ $(document).ready(function () {
         document.execCommand("copy");
         window.getSelection().removeAllRanges();// to deselect
     });
+
+    $('div.card').click(function () {
+        $(this).find(".hidden").toggleClass('open');
+    });
 });

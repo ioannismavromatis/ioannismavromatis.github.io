@@ -16,6 +16,28 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 * Projects
 *****************************************************************************/
 /******************************************************************************* Styles for the base elements of the theme. *****************************************************************************/
+* { transition: all 0.3s ease-out; }
+
+.go-corner { display: flex; align-items: center; justify-content: center; position: absolute; width: 32px; height: 32px; overflow: hidden; top: 0; right: 0; background-image: linear-gradient(-45deg, #424242 1%, #8f8f8f 100%); border-radius: 0 4px 0 32px; }
+
+.fa-expand-alt { margin-top: -7px; margin-right: -7px; color: white; }
+
+.card-horizontal { width: 800px; height: auto; display: flex; }
+
+.projects .grid-item { width: 250px; margin-bottom: 10px; }
+
+.card:hover .fa-expand-alt { font-size: 1.5em; }
+.card:hover .go-corner { width: 45px; height: 45px; }
+.card .card-img { max-height: 100%; max-width: 100%; width: auto; height: auto; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+.card .card-body .project-title { color: #B71C1C; }
+.card .card-body .span-year { display: block; }
+.card .card-body .span-space { margin-bottom: 10px; }
+
+.projects .hidden { width: 800px; height: auto; display: flex; font-size: 1rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; border: dashed 1px white; }
+.projects .hidden p { line-height: 1.4em; margin: 10px; }
+.projects .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+.projects .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; border-color: #828282; }
+
 a, table.table a { color: #424242; }
 a:hover, table.table a:hover { color: #424242; text-decoration: underline; }
 a:hover:after, table.table a:hover:after { width: 100%; }
@@ -88,9 +110,6 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 
 .distill a:hover { border-bottom-color: #424242; text-decoration: none; }
 
-.projects .grid-item { width: 250px; margin-bottom: 10px; }
-.projects .grid-item a { color: black; text-decoration: none; }
-.projects .grid-item a:hover { color: #424242; }
 .projects .cv-grid-item { width: 300px; height: 300px; margin-bottom: 10px; }
 .projects .cv-grid-item .card { margin-left: 10px; margin-right: 10px; }
 .projects .cv-grid-item .card .card-body { height: 60%; width: 100%; }

@@ -1,7 +1,7 @@
 My personal website
 --------------------
 
-This repository hosts the files of my personal GitHub website [ioannismavromatis.github.io](ioannismavromatis.github.io).
+This repository hosts the files of my personal GitHub website [ioannismavromatis.com](ioannismavromatis.com).
 
 The website is based on the amazing [al-folio](https://github.com/alshedivat/al-folio) theme, where I introduced various changes to bring closer to my liking. Also, it is built using [Jekyll](https://jekyllrb.com).
 

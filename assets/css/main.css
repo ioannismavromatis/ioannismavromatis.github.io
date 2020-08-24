@@ -22,7 +22,7 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
 .fa-expand-alt { margin-top: -7px; margin-right: -7px; color: white; }
 
-.card-horizontal { width: 800px; height: auto; display: flex; }
+.card-horizontal { height: auto; display: flex; }
 
 .projects .grid-item { width: 250px; margin-bottom: 10px; }
 
@@ -33,7 +33,7 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 .card .card-body .span-year { display: block; }
 .card .card-body .span-space { margin-bottom: 10px; }
 
-.projects .hidden { width: 800px; height: auto; display: flex; font-size: 1rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; border: dashed 1px white; }
+.projects .hidden { height: auto; display: flex; font-size: 1rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; border: dashed 1px white; }
 .projects .hidden p { line-height: 1.4em; margin: 10px; }
 .projects .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
 .projects .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; border-color: #828282; }
@@ -116,12 +116,9 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 .projects .cv-grid-item .card .card-body .cv-frame { position: relative; height: 60%; width: 100%; pointer-events: none; border: 0; }
 .projects .card img { width: 100%; }
 
-ol.bibliography { list-style-type: none; }
-
-ol.bibliography > li:before { content: "[" counter(bibitem) "]"; position: absolute; padding-top: 26px; padding-left: 26px; }
-
-ol.bibliography > li { counter-increment: bibitem -1; }
-
+@media only screen and (min-device-width: 640px) { ol.bibliography { list-style-type: none; }
+  ol.bibliography > li:before { content: "[" counter(bibitem) "]"; position: absolute; padding-top: 26px; padding-left: 26px; }
+  ol.bibliography > li { counter-increment: bibitem -1; } }
 .type { color: #8f8f8f; border-bottom: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 2rem; text-align: right; }
 
 .year { color: #8f8f8f; border-bottom: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 2rem; text-align: right; }

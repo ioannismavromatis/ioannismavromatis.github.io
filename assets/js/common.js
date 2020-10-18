@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $('a.abstract').click(function () {
         $(this).parent().parent().parent().find(".abstract.hidden").toggleClass('open');
     });

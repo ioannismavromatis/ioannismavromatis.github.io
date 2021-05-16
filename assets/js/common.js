@@ -22,4 +22,5 @@ $(document).ready(function() {
     $('div.card').click(function () {
         $(this).find(".hidden").toggleClass('open');
     });
+    $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
 });

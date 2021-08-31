@@ -17,10 +17,22 @@ $(document).ready(function() {
         window.getSelection().addRange(range);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();// to deselect
+        $(this).text('Copied!'); 
     });
 
-    $('div.card').click(function () {
+    $('div.card-project').click(function () {
         $(this).find(".hidden").toggleClass('open');
     });
+
+    $('a.datasetbutton').click(function () {
+        $(this).parent().parent().find(".hidden").toggleClass('open');
+    });
+
+    $('#download').on('click', function(evt) {
+        evt.preventDefault(); //don't submit the form, which a button naturally does
+        if (confirm('The database is very large! Are you sure you want to continue?"'))
+            location.href = 'https://ioannismavromatis.com/dataset'; //redirect only on confirm
+    });
+
     $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
 });

@@ -178,9 +178,15 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .cv .card .list-group-item .badge { color: var(--global-card-bg-color) !important; background-color: var(--global-theme-color) !important; }
 
-.header-bar { border-bottom: 1px solid var(--global-divider-color); text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
+.header-bar { border-bottom: 1px solid var(--global-divider-color); text-align: center; padding-top: 2rem; padding-bottom: 3rem; }
 
 .header-bar h1 { color: var(--global-theme-color); font-size: 5rem; }
+
+.tag-list { border-bottom: 1px solid var(--global-divider-color); text-align: center; padding-top: 1rem; }
+
+.tag-list ul { justify-content: center; display: flow-root; }
+
+.tag-list ul p, .tag-list ul li { list-style: none; display: inline-block; padding: 1rem 0.5rem; color: var(--global-text-color-light); }
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
 
@@ -236,6 +242,8 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .publications ol.bibliography li { margin-bottom: 1rem; }
 
+.publications ol.bibliography li .preview { width: 100%; min-width: 80px; max-width: 200px; }
+
 .publications ol.bibliography li .abbr { height: 2rem; margin-bottom: 0.5rem; }
 
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; }
@@ -253,6 +261,10 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 .publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
 
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
+
+.publications ol.bibliography li .author > span.more-authors { color: var(--global-text-color-light); border-bottom: 1px dashed var(--global-text-color-light); cursor: pointer; }
+
+.publications ol.bibliography li .author > span.more-authors:hover { color: var(--global-text-color); border-bottom: 1px dashed var(--global-text-color); }
 
 .publications ol.bibliography li .links a.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; }
 

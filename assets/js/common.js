@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('a.bibtex').click(function () {
         $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
     });
-    $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
+    $('a').removeClass('waves-effect waves-light');
     $('div.card-project').click(function () {
         $(this).find(".hidden").toggleClass('open');
     });

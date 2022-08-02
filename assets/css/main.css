@@ -6,11 +6,19 @@
 
 :root .fa-moon { padding-left: 10px; padding-top: 12px; display: block; }
 
+:root .repo-img-light { display: block; }
+
+:root .repo-img-dark { display: none; }
+
 html[data-theme='dark'] { --global-bg-color: #1C1C1D; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-hover-color: #2698BA; --global-footer-bg-color: #1C1C1D; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #e8e8e8; --global-divider-color: #7b7b82; --global-card-bg-color: #212529; }
 
 html[data-theme='dark'] .fa-sun { padding-left: 10px; padding-top: 12px; display: block; }
 
 html[data-theme='dark'] .fa-moon { display: none; }
+
+html[data-theme='dark'] .repo-img-light { display: none; }
+
+html[data-theme='dark'] .repo-img-dark { display: block; }
 
 /****************************************************************************** Content */
 body { padding-bottom: 70px; color: var(--global-text-color); background-color: var(--global-bg-color); }
@@ -177,6 +185,8 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 .cv .card .list-group-item { background-color: inherit; }
 
 .cv .card .list-group-item .badge { color: var(--global-card-bg-color) !important; background-color: var(--global-theme-color) !important; }
+
+@media (min-width: 768px) { .repo { max-width: 50%; } }
 
 .header-bar { border-bottom: 1px solid var(--global-divider-color); text-align: center; padding-top: 2rem; padding-bottom: 3rem; }
 

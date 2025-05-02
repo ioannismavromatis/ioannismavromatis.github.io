@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /assets/pdf/cvs
+Disallow:
 
 Sitemap: https://ioannismavromatis.com/sitemap.xml

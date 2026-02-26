@@ -7,7 +7,6 @@ first_name: Ioannis
 middle_name:
 last_name: Mavromatis
 contact_note: >
-  email: ioannis.mavromatis@digicatapult.org.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Ioannis Mavromatis - personal website
 footer_text: >
